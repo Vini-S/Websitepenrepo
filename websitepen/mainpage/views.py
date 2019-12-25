@@ -16,13 +16,13 @@ def contactus(request):
 	message = request.POST.get('Message')
 	
 
-	EMAIL_ADDRESS = 'vinitasharma13061999@gmail.com'
-	EMAIL_PASSWORD = 'computerorganizationandarchitecture'
+	EMAIL_ADDRESS = 'email@gmail.com'
+	EMAIL_PASSWORD = 'passwrod'
 
 	msg = EmailMessage()
 	msg['Subject'] = f'Contact Request from {name}'
 	msg['From'] = emailid
-	msg['To'] = 'vinitasharma13061999@gmail.com'
+	msg['To'] = 'emailgmail.com'
 
 	msg.set_content(f'message : {message}')
 
