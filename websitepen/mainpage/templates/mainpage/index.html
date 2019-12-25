@@ -1,0 +1,305 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!-- meta start-->
+  <meta charset="UTF-8">
+
+
+ <link rel="icon" href="{% static 'mainpage/icon.png' %}" type="icon.png" sizes="48x48">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="HTML,CSS,JavaScript,frontend,front-end,Websitepen,websites,webdesign,Landing page,Logo,Icon Photoshop edit, webpage,bootstrap,jquery,Template,Banner,Best website in delhi,Graphic design,branding,Modern  website,animation 3d,Free website">
+  <meta name="description" content="Hi! I am Websitepen, a front-end developer from the Delhi-India">
+  <meta name="author" content="Websitepen">
+  <meta name="abstract" content="Websitepen - Front-End Developer at delhi india">
+  <meta name="designer" content="Websitepen">
+  <meta name="rating" content="General">
+  <meta name="classification" content="Web Programming, Front-End">
+  <meta name="title" content="Websitepen | Front-end and Mobile Developer">
+  <meta name="theme-color" content="#282b42">
+  <title>Websitepen | UI/UX Design & Front-End Web Developer</title>
+  
+  <!-- meta end-->
+  <!-- for main image -->
+  <link rel='stylesheet' href='https://unpkg.com/aos@2.3.4/dist/aos.css'>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainpage/style.css' %}">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12 column-sm-8">
+        <p id="logo" style="font-size: 20px;">Websitepen</p>
+      </div>
+      <div class="column-xs-12 column-sm-4">
+        <ul>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#gall">Work</a></li>
+          <li><a class="open-button" onclick="openForm()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="container">
+    <section class="grid intro">
+      <div class="column-xs-12 column-md-4">
+        <div class="info">
+          <h1 class="header-h1" style="font-family: 'Old Standard TT', serif; line-height: 1.1;">Websitepen</h1>
+          <p class="lead">I am Websitepen, a front-end developer from the Delhi-India</p>
+          <a class="btn fill" href="#aboutus">More about me</a>
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-8">
+        <div class="image-holder">
+          <div class="image-block" data-aos="reveal-bottom"></div>
+          <img class="main-img" src="{% static 'mainpage/main-img.jpg' %}">
+        </div>
+      </div>
+    </section>
+  </div>
+</header>
+
+ 
+
+    
+<section id="gall" class="gallery">
+  <center><h2>Our Work
+
+  </h2></center>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img class="qwerty" src="{% static 'mainpage/cards.jpg' %}">
+          <figcaption class="img-content">
+            <h2 class="title">cards</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Cards</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img class="qwerty" src="{% static 'mainpage/icon.jpg' %}">
+          <figcaption class="img-content">
+            <h2 class="title">Icons</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Icons</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img class="qwerty" src="{% static 'mainpage/Website.jpg' %}">
+          <figcaption class="img-content">
+            <h2 class="title">Website</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Website</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img class="qwerty" src="{% static 'mainpage/logo-work.jpg' %}">
+          <figcaption class="img-content" style="margin: 0px;">11
+            <h2 class="title">Logo</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Logo</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img class="qwerty" src="{% static 'mainpage/website1.jpg' %}">
+          <figcaption class="img-content">
+            <h2 class="title">Website</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Website</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img class="qwerty" src="{% static 'mainpage/photoshop.jpg' %}">
+          <figcaption class="img-content">
+            <h2 class="title">Photoshop</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Photoshop</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- partial -->
+  <script  src="{% static 'mainpage/script1.js' %}"></script>
+
+
+
+
+
+
+<center><h1 id="aboutus" style="color: black; font-size: 50px; font-family: 'Old Standard TT', serif;">About Us</h1></center>
+
+<div class="container">
+     <div class="grid">
+      <div class="column-xs-12 column-md-6">
+        <div class="para">
+          <h2>Hi, Happy to have you here!</h2>
+          <p style="text-align: justify;">helping other businesses in their digital representation through designing websites for them. We are starting from current year itself.
+          my creative team of designers are result-oriented and work in tandem. You can trust our team to deliver the goods.</p>
+          <p style="text-align: justify;">Most of who we work with are business referrals by our existing clientele. It feels special to be recognized for our work.
+            My services offer our users the ability to easily create beautiful and highly functional online presence, to promote businesses, content and ideas. we offer our users numerous services like creating and publishing of stunning websites, Photoshop, Logo, Icons, Cards, animation 3d.</p>
+          <p style="text-align: justify;">Websitepen was born from the idea that everybody needs access to seamless, reliable and professional websites on a consistent basis.</p>
+        </div>
+      </div>
+
+      <div class="column-xs-12 column-md-6">
+        <div class="mySlides fade">
+          <img src="{% static 'mainpage/img1.JPG' %}" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="{% static 'mainpage/img2.JPG' %}" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="{% static 'mainpage/img3.JPG' %}" style="width:100%">
+        </div>
+      </div> 
+       
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="social">
+  <a href="https://www.behance.net/roshanmalib3bb">
+    <i class="fa fa-behance" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.instagram.com/web_sitepen/">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+ 
+  <a href="https://dribbble.com/websitepen">
+    <i class="fa fa-dribbble" aria-hidden="true"></i>
+  </a>
+
+</div>
+
+<div class="footer-para">
+  <p>Designed and built by Websitepen &copy; 2020</p>   
+</div>
+
+
+
+<div class="form-popup" id="myForm">
+
+  <button class="cancel" onclick="closeForm()"><b>x</b></button>
+
+  <form action="{% url 'contactus-form' %}" class="form-container" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <h1 class="form-h1">Let's Talk!</h1>
+    <p style="color: gray;">We will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!</p>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text"  name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text"  name="email" required>
+
+    <label for="Subject"><b>Subject</b></label>
+    <input type="text" name="Subject" required>
+
+    <label for="Message"><b>Message</b></label>
+    <input type="text" name="Message" required>
+
+    <center><button class="btn fill" onclick="sendEmail()">SUBMIT</button></center>
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- partial -->
+  <script src='https://unpkg.com/aos@2.3.4/dist/aos.js'></script><script  src="{% static 'mainpage/script.js' %}"></script>
+<!-- form script -->
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+  <!-- sliding image script -->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+
+</body>
+</html>
